@@ -1,2 +1,4 @@
 .htaccess
 composer.json
+index.php
+application/config/
