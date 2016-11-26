@@ -14,9 +14,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			if ($this->session->userdata('logged')) {
 
 			$data['title'] = "MO | Área do Usuário";
-			$this->load->view('adm/commons/header',$data);
+			$this->load->view('Adm/commons/header',$data);
 			$this->load->view('Adm/home');
-			$this->load->view('adm/commons/footer');
+			$this->load->view('Adm/commons/footer');
 			
 			} else{
 				redirect(base_url('adm/login'));
@@ -59,11 +59,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			$data['umProduto'] = $umProduto;
 
 			$header['title'] = "MO | Cadastro de Produto";
-			$this->load->view('adm/commons/header',$header);
+			$this->load->view('Adm/commons/header',$header);
 			$this->load->view('Adm/cadastro/cadastro-produto',$data);
 			$this->load->view('adm/commons/footer');
 		}else{
-			redirect(base_url('adm/login'));
+			redirect(base_url('Adm/login'));
 		}
 	}
 }

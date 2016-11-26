@@ -143,9 +143,9 @@ public function Login()
 
 		$data['user'] = $this->User_model->GetUser($this->session->userdata('id'));
 		$data['title'] = "MO | Cadastro-Funcionario";
-		$this->load->view('adm/commons/header',$data);
-	    $this->load->view('adm/alterar-senha',$data);
-	    $this->load->view('adm/commons/footer');
+		$this->load->view('Adm/commons/header',$data);
+	    $this->load->view('Adm/alterar-senha',$data);
+	    $this->load->view('Adm/commons/footer');
 	}
 
 }
