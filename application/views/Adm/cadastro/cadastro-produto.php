@@ -31,12 +31,14 @@
                                 <label>Nome do produto</label>
                                     <input type="text" class="form-control" name="nome" required="" />
                                 <label>Grupo</label>
+                                    <!--Comeco do select-->
                                     <select class="form-control" name="id_ga">
                                         <option>Selecione..</option>
                                         <?php foreach ($grupoProduto as $grupos) { ?>
                                         <option value="<?=$grupos->id_ga?>"><?=$grupos->nome?></option>
                                         <?php } ?>
                                     </select>
+                                    <!--Fim do select-->
                                 <label>Unidade de Medida</label> 
                                     <select class="form-control" name="id_um">
                                         <option>Selecione..</option>
