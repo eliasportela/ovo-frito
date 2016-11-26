@@ -48,9 +48,9 @@ public function Login()
     }
 
     $data['title'] = "MO | Login";
-	$this->load->view('adm/commons/header',$data);
-    $this->load->view('adm/login',$data);
-    $this->load->view('adm/commons/footer');
+    $this->load->view('Adm/commons/header',$data);
+    $this->load->view('Adm/login',$data);
+    $this->load->view('Adm/commons/footer');
     
   }
 
