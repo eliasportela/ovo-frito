@@ -134,7 +134,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?=base_url('assets/img/team/1.jpg')?>" class="img-responsive img-circle" alt="">
+                        <img src="<?=base_url('assets/img/team/elias.jpg')?>" class="img-responsive img-circle" alt="">
                         <h4>Elias Portela</h4>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
@@ -149,8 +149,8 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?=base_url('assets/img/team/2.jpg')?>" class="img-responsive img-circle" alt="">
-                        <h4>Onicius Maia</h4>
+                        <img src="<?=base_url('assets/img/team/onicio.jpg')?>" class="img-responsive img-circle" alt="">
+                        <h4>Junior Souza</h4>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
@@ -164,7 +164,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="<?=base_url('assets/img/team/3.jpg')?>" class="img-responsive img-circle" alt="">
+                        <img src="<?=base_url('assets/img/team/danilo.jpg')?>" class="img-responsive img-circle" alt="">
                         <h4>Danilo Vicente</h4>
                         <p class="text-muted"></p>
                         <ul class="list-inline social-buttons">
