@@ -94,10 +94,10 @@ public function Login()
 				}
 		}
 
-		$data['title'] = "MO | Cadastro-Funcionario";
-		$this->load->view('adm/commons/header',$data);
-	    $this->load->view('adm/cadastro/cadastro-funcionario',$data);
-	    $this->load->view('adm/commons/footer');
+	$data['title'] = "MO | Cadastro-Funcionario";
+	$this->load->view('Adm/commons/header',$data);
+	$this->load->view('Adm/cadastro/cadastro-funcionario',$data);
+	$this->load->view('Adm/commons/footer');
 		}else{
 			redirect(base_url('adm/login'));
 		}
