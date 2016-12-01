@@ -12,7 +12,7 @@ class User_model extends CI_Model
 		parent::__construct();
 	}
 
-	function Save($data)
+	function Save($data) // cadastro do funcionario
 	{
 		$data['senha'] = password_hash($data['senha'], PASSWORD_DEFAULT);
 		$res = $this->db->insert('funcionario',$data);

@@ -9,7 +9,7 @@
 	<link href="<?=base_url('assets/css/internas.css')?>" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-default navbar-fixed-top">
+  <nav class="navbar navbar-default">
     <div class="container">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -22,8 +22,7 @@
       </div>
       <div id="navbar" class="collapse navbar-collapse">
         <div id="navbar" class="collapse navbar-collapse">
-          <?php $this->load->view('commons/menu'); ?>
-        </div>
+         </div>
       </div>
     </div>
   </nav>

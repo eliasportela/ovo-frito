@@ -22,6 +22,16 @@ class Crud_model extends CI_Model
 		}
 	}
 
+	public function Read($table,$p){
+		$this->db->select('*')->from($table)->where($p);
+		$result	= $this->db->get()->result();
+		if($result){
+			return $result[0];
+		}else{
+			return false;
+			}
+	}
+
 	public function ReadAll($table){
 		$this->db->select('*')->from($table);
 		$result	= $this->db->get()->result();
@@ -30,13 +40,17 @@ class Crud_model extends CI_Model
 		}else{
 			return false;
 			}
-		}
+	}
 
-	function Update($data)
+	function Update($table,$data,$p)
 	{
-		$data['passw'] = password_hash($data['passw'], PASSWORD_DEFAULT);
-		$this->db->where('id',	$this->session->userdata('id'));
-		$this->db->update('funcionario',	$data);
+		$this->db->where($p);
+		$result = $this->db->update($table,$data);
+		if($result){
+			return true;
+		}else{
+			return false;
+			}
 	}
 
 	function Login($data){
@@ -44,4 +58,15 @@ class Crud_model extends CI_Model
 		$results = $this->db->get()->result();
 		return $results;
 	}
+
+	public function Query($sql){
+		$query = $this->db->query($sql);
+		$result = $query->result();
+		if($result){
+			return $result;
+		}else{
+			return false;
+			}
+	}
+
 }

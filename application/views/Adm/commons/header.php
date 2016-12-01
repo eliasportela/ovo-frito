@@ -19,7 +19,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="<?=base_url('assets/css/agency.min.css')?>" rel="stylesheet">
+    <link href="<?=base_url('assets/css/agency.min2.css')?>" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="<?=base_url('assets/css/elias.min.css')?>">
    
 </head>
@@ -27,7 +27,7 @@
 
 <!-- Navigation -->
 
-    <nav id="mainNav">
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -50,11 +50,11 @@
                         </li>
                         <li>
                             <a class="page-scroll" href="<?=base_url('adm/logout')?>">Sair</a>
-                        <li>
+                        </li>
                         <?php } else { ?>
                         <li>
                             <a class="page-scroll" href="<?=base_url('adm/login')?>">Login</a>
-                        <li>
+                        </li>
                         <?php  } ?></a>
                     </li>
                 </ul>

@@ -50,11 +50,14 @@ public function Login()
     if ($this->session->userdata('logged')) {
     	redirect(base_url('adm'));
     }else{
-        $data['title'] = "MO | Login";
-        $this->load->view('Adm/commons/header',$data);
-        $this->load->view('Adm/login',$data);
-        $this->load->view('Adm/commons/footer');
-    }    
+
+	    $data['title'] = "MO | Login";
+		$this->load->view('adm/commons/header',$data);
+	    $this->load->view('adm/login',$data);
+	    $this->load->view('adm/commons/footer');
+	}
+
+    
   }
 
 	public function Logout() {
@@ -97,10 +100,10 @@ public function Login()
 				}
 		}
 
-	$data['title'] = "MO | Cadastro-Funcionario";
-	$this->load->view('Adm/commons/header',$data);
-	$this->load->view('Adm/cadastro/cadastro-funcionario',$data);
-	$this->load->view('Adm/commons/footer');
+		$data['title'] = "MO | Cadastro-Funcionario";
+		$this->load->view('adm/commons/header',$data);
+	    $this->load->view('adm/cadastro/cadastro-funcionario',$data);
+	    $this->load->view('adm/commons/footer');
 		}else{
 			redirect(base_url('adm/login'));
 		}
@@ -144,16 +147,11 @@ public function Login()
 	    }		
 	}
 
-	if ($this->session->userdata('logged')) {
 		$data['user'] = $this->User_model->GetUser($this->session->userdata('id'));
 		$data['title'] = "MO | Cadastro-Funcionario";
-		$this->load->view('Adm/commons/header',$data);
-	    $this->load->view('Adm/alterar-senha',$data);
-	    $this->load->view('Adm/commons/footer');
-	}else{
-		redirect(base_url('adm/login'));
+		$this->load->view('adm/commons/header',$data);
+	    $this->load->view('adm/alterar-senha',$data);
+	    $this->load->view('adm/commons/footer');
 	}
-
-  }
 
 }
